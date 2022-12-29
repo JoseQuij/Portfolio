@@ -1,6 +1,7 @@
 import React from 'react'
 import ChImage from '../assets/chrollo.jpg';
 import { MdOutlineKeyboardArrowRight} from 'react-icons/md';
+import { Link } from "react-scroll"
 
 const Home = () => {
   return (
@@ -14,12 +15,12 @@ const Home = () => {
                     I am a self taught web developer, always trying out new fields of study. Currently, I love to work on web development and studying foreign languages.
                 </p>
                 <div>
-                    <button className='group text-white wfit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+                    <Link to='Portfolio' smooth duration={500} className='group text-white w-36 wfit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
                         Portfolio
                         <span className='group-hover:rotate-90 duration-300'>
                         <MdOutlineKeyboardArrowRight size={25} className="ml-1"/>
                         </span>
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div>
